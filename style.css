@@ -1,12 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
 --first-color: hsl(23, 85%, 60%);
 --first-color-light: hsl(23, 90%, 75%);
 --first-color-alt: hsl(23, 80%, 55%);
@@ -17,9 +12,6 @@
   --text-color: hsl(180, 4%, 72%);
   --text-color-light: hsl(180, 4%, 65%);
   --body-color: hsl(180, 12%, 8%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Red Hat Display", sans-serif;
   --second-font: "Kaushan Script", cursive;
   --biggest-font-size: 2rem;
@@ -31,17 +23,13 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-
-  /*========== Font weight ==========*/
   --font-bold: 700;
   --font-black: 900;
-
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+
 @media screen and (min-width: 1023px) {
   :root {
     --biggest-font-size: 6rem;
@@ -56,7 +44,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -99,7 +87,7 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 1124px;
   margin-right: 1.5rem;
@@ -151,7 +139,7 @@ img {
 
 .main {
   overflow: hidden;
-  /* For animation ScrollReveal */
+  
 }
 
 .color-red {
@@ -162,7 +150,7 @@ img {
   color: var(--first-color);
 }
 
-/*=============== HEADER & NAV ===============*/
+
 .header {
   width: 100%;
   background-color: transparent;
@@ -246,23 +234,23 @@ img {
   border: none;
 }
 
-/* Show menu */
+
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
+
 .bg-header {
   background-color: var(--body-color);
   box-shadow: 0 4px 8px hsla(180, 12%, 4%, 0.3);
 }
 
-/* Active link */
+
 .active-link {
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
+
 .home {
   position: relative;
   padding-bottom: 0;
@@ -329,7 +317,7 @@ img {
   margin: 0 auto;
 }
 
-/*=============== BUTTON ===============*/
+
 
 .button {
   display: inline-block;
@@ -362,7 +350,7 @@ img {
   transform: translateX(0.25rem);
 }
 
-/*=============== LOGOS ===============*/
+
 
 .logos__container {
   grid-template-columns: repeat(2, 1fr);
@@ -374,7 +362,7 @@ img {
   width: 120px;
 }
 
-/*=============== PROGRAM ===============*/
+
 .program__container {
   grid-template-columns: 225px;
   justify-content: center;
@@ -456,7 +444,7 @@ img {
   opacity: 1;
 }
 
-/*=============== CHOOSE ===============*/
+
 
 .choose {
   padding: 0;
@@ -531,7 +519,7 @@ img {
   margin: 0 auto;
 }
 
-/*=============== PRICING ===============*/
+
 
 .pricing__container {
   grid-template-columns: 285px;
@@ -621,7 +609,7 @@ img {
   color: var(--title-color-black);
 }
 
-/*=============== CALCULATE ===============*/
+
 
 .calculate {
   padding-bottom: 0;
@@ -691,7 +679,7 @@ img {
   transform: translateY(1rem);
 }
 
-/*=============== FOOTER ===============*/
+
 
 .footer__container {
   row-gap: 4rem;
@@ -801,7 +789,7 @@ img {
   margin-bottom: 2rem;
 }
 
-/*=============== SCROLL BAR ===============*/
+
 
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -819,7 +807,7 @@ img {
   border-radius: 0.5rem;
 }
 
-/*=============== SCROLL UP ===============*/
+
 
 .scrollup {
   position: fixed;
@@ -838,14 +826,13 @@ img {
   transform: translateY(-0.25rem);
 }
 
-/* Show Scroll Up*/
+
 
 .show-scroll {
   bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 
 @media screen and (max-width: 340px) {
   .container {
@@ -885,7 +872,7 @@ img {
   }
 }
 
-/* For medium devices */
+
 
 @media screen and (min-width: 768px) {
   .nav__menu {
@@ -956,7 +943,7 @@ img {
   }
 }
 
-/* For large devices */
+
 
 @media screen and (min-width: 1023px) {
   .nav {
